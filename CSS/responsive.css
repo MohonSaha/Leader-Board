@@ -1,9 +1,19 @@
+/* Responsive for mobile devices  */
+
 @media only screen and (max-width: 688px) {
 
-    .container{
-        width: 100%;
+    body{
+        max-width: 85vw;
+        box-sizing: border-box;
     }
-   .players, .blogs{
+
+
+    .container{
+        width: 90%;
+        padding: 30px;
+        margin-left: 40px;
+    }
+   .players, .blogs, .courses{
     grid-template-columns: repeat(1, 1fr);
    }
 
@@ -11,15 +21,42 @@
     flex-direction: column;
    }
 
- .courses{
-    display: none;
+   .course{
+    margin-bottom: 30px;
    }
 
-   .course-section{
-    display: none;
+   .course-title{
+    margin-bottom: 10px;
    }
 
+   .couse-auther{
+    margin: 0PX;
+   }
+
+   .course{
+    width: 100%;
+    padding: 0px 15px;
+}
+}
 
 
+/* Responsive for tablate devices  */
 
+@media only screen and (min-width:689PX) and (max-width:992px) {
+
+    body{
+        max-width: 85vw;
+        box-sizing: border-box;
+    }
+
+
+    .container{
+        width: 106%;
+        padding: 30px;
+        margin: 0px auto;
+    }
+
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+       }
 }
